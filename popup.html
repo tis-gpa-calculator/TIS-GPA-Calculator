@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TIS GPA Calculator</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      color: #ffffff;
+      margin-top: 0;
+    }
+    .loading {
+      text-align: center;
+      padding: 20px;
+    }
+    #results {
+      text-align: center;
+    }
+    .tis-grade {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3c3c3c;
+      margin: 10px 0;
+    }
+    .percentage {
+      font-size: 14px;
+      color: #3f3f3f;
+    }
+    .info {
+      margin-top: 6px;
+      color: #909090;
+      font-size: 12px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #c0292d;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #a02020;
+    }
+  </style>
+</head>
+<body>
+  <div style="background-color: #c0292d; margin: -25px -25px 0 -25px; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+  <img src="tis-logo.png" alt="tis logo" style="display: block; margin: 0 10px 0 0; padding: 0; width: 200px; height: auto; text-align: left;">
+  <h2 style="margin: 0; color: #ffffff; font-size: 13px; text-align: right;">GPA Calculator</h2>
+  </div>
+
+ 
+  <div id="content" style="margin-top: 15px;">
+    <div class="loading" id="loading">
+      Loading...
+    </div>
+    <div id="results" style="display: none;">
+      <div class="tis-grade" id="tisGrade"></div>
+      <div class="percentage" id="percentage"></div>
+      <div class="info">
+        <i>calculated from <b><span id="gradeCount">0</span></b> summative(s)</i>
+      </div>
+    </div>
+    <button id="refreshBtn">Recalculate</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

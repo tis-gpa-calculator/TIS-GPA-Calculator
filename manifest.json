@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "TIS GPA Calculator",
+  "version": "1.0",
+  "description": "calculates your GPA from summative grades! just go to your gibbon markbook page and click on the extension! (note: this does not account for weighted grades)",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gibbon.tis.edu.mo/index.php?q=%2Fmodules%2FMarkbook%2Fmarkbook_view.php*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

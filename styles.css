@@ -1,0 +1,40 @@
+.average-display {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 10000;
+  min-width: 200px;
+  border: 2px solid #c0292d;
+}
+
+.average-display h3 {
+  margin: 0 0 10px 0;
+  color: #c0292d;
+  text-align: center;
+}
+
+.tis-grade-display {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #c0292d;
+  margin: 10px 0;
+}
+
+.percentage-display {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.grade-count {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-top: 5px;
+}
