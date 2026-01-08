@@ -7,5 +7,5 @@ this is how to use it:
 6. click on the "Load unpacked" button
 7. select the "TIS-GPA-Calculator-main" folder
 8. the extension is now installed on your browser!
-
-it only works on gibbon markbook page, btw bc uhh it ONLY calculates tis grades
+just click on the extension icon when you're on the gibbon markbook page!
+(it only works on gibbon markbook page, btw bc uhh it ONLY calculates tis grades)
