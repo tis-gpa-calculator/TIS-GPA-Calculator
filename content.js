@@ -124,7 +124,7 @@ function calculateAverage() {
   console.log('Found summative grades:', summativeGrades);
   
   if (summativeGrades.length === 0) {
-    return { error: 'No summative grades found', count: 0 };
+    return { error: 'dam no summative(s) detected', count: 0 };
   }
   
   let totalLow = 0;
@@ -142,7 +142,7 @@ function calculateAverage() {
   });
   
   if (validGrades === 0) {
-    return { error: 'No valid summative grades found', count: 0 };
+    return { error: 'no valid summative grades found :(', count: 0 };
   }
   
   const avgLow = Math.round((totalLow / validGrades) * 10) / 10;
